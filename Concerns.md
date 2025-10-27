@@ -1,6 +1,5 @@
-Add list of concerns to this file
+**Concerns Table:**
 
-insert table here
 | **ID**  | **Concern** |
 |----------|-------------|
 | **CRN-1** | Designing a tokenization system that supports multi-language queries and interprets the context of input correctly without losing meaning to mistranslation during output. |
