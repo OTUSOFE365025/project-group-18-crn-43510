@@ -1,3 +1,5 @@
+**Business Case:**
+
 Various stakeholders at the university decided it was beneficial to create an AI-powered assistant to streamline 
 interactions with institution data. 
 This was expected to greatly increase the efficiency of university employees, and reduce the need for student assistance with support of multiple languages with both text and voice input. 
