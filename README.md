@@ -1,6 +1,6 @@
 # Phase 1 Submission: Project Architectural Drivers
 
-**Use the following links to access the artifacts from the requirement analysis:**
+**Use the following links to access the artifacts created from the requirement analysis:**
 
 - [Business Case](/Business%20Case.md)
 - [Use Cases](/Use%20Cases.md)

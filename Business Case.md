@@ -1,1 +1,7 @@
-insert written business case here
+**Business Case:**
+
+Various stakeholders at the university decided it was beneficial to create an AI-powered assistant to streamline 
+interactions with institution data. 
+This was expected to greatly increase the efficiency of university employees, and reduce the need for student assistance with support of multiple languages with both text and voice input. 
+The platform, through its deep integration with university systems, would be capable of fulfilling user requests such as providing reminders for upcoming important dates, displaying personal or classroom statistics in various mediums, and performing various other related tasks.
+To acheive this, the system will leverage AI models and access to the university network to provide assistance within the users responsibilities. It shields data from those without necessary reason or right to have access to it and performs operations within existing security measures. The interface is built to be quickly upgradable to any standard API from prominent AI model providers.
