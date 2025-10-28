@@ -1,4 +1,4 @@
-Add the Quality Attributes to this file
+**Quality Attributes Table:**
 | **ID**  | **Quality Attribute**         | **Scenario**                                                                                                                                                                        | **Associated Use Case**            |
 |----------|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
 | **QA-1** | Security & Privacy           | When the user inputs any data, it is encrypted. This encryption should apply to institutional privacy policies.                                                                      | UC-1                               |
