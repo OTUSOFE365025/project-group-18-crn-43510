@@ -15,7 +15,7 @@ Using the requirements provided, we were able to define all of the architectural
 - [System Constraints](/architectural-drivers/Constraints.md)
 - [Architectural Concerns](/architectural-drivers/Concerns.md)
 
-*Use the following links to access the artifacts created from the requirement analysis*
+*Use the above links to access the artifacts created from the requirement analysis*
 
 ## Phase 2: ADD Iteration 1&2 
 
