@@ -19,4 +19,7 @@ Using the requirements provided, we were able to define all of the architectural
 
 ## Phase 2: ADD Iteration 1&2 
 
+- [Iteration 1](/ADD%20Iteration%201)
+- [Iteration 2](/ADD%20Iteration%202)
 
+## Phase 3: Incomplete
