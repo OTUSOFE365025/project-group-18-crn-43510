@@ -19,7 +19,16 @@ Using the requirements provided, we were able to define all of the architectural
 
 ## Phase 2: ADD Iteration 1&2 
 
+The steps for each iteration of the ADD Design are compiled into the following markdown files.
+
+**ADD Iterations:**
 - [Iteration 1](/ADD%20Iteration%201)
 - [Iteration 2](/ADD%20Iteration%202)
 
-## Phase 3: Incomplete
+If you want to directly access the artficacts from the iterations use the following.
+
+**ADD Iteration Artifacts:**
+- [Iteration 1: Logical View](/iteration-artifacts/)
+- [Iteration 1: Deployment View](/iteration-artifacts/)
+
+## Phase 3: Prepare for next submission

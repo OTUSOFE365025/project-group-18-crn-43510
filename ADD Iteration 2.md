@@ -1,10 +1,6 @@
 # Step 1: Review Inputs
 
-table:
 
-|test|table|
-|---|---|
-|hello|world|
 
 # Step 2: Establish Iteration Goal by Selecting Drivers
 
