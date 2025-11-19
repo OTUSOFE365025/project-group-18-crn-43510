@@ -28,7 +28,9 @@ The steps for each iteration of the ADD Design are compiled into the following m
 If you want to directly access the artficacts from the iterations use the following.
 
 **ADD Iteration Artifacts:**
-- [Iteration 1: Logical View](/iteration-artifacts/)
-- [Iteration 1: Deployment View](/iteration-artifacts/)
+- [Iteration 1: Context Diagram](/iteration-artifacts/iteration1_context.drawio.png)
+- [Iteration 1: Logical View](/iteration-artifacts/iteration1_logical.drawio.png)
+- [Iteration 1: Deployment View](/iteration-artifacts/iteration1_deployment.drawio.png)
+- 
 
 ## Phase 3: Prepare for next submission
