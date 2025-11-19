@@ -71,7 +71,7 @@ Since this is the first iteration, **we want to establish the overall system str
 
 **Here is the Context Diagram:**
 
-![Context diagram for step 2 of ADD process iteration 1](/iteration-artifacts/iteration1_context.drawio.png)
+![Context diagram for step 2 of ADD process iteration 1](/iterations/iteration-artifacts/iteration1_context.drawio.png)
 
 # Step 3: Choose One or More Elements of the System to Decompose
 
@@ -100,7 +100,7 @@ Because we are developing a greenfield system, we will be refining the entire AI
 
 ## Logical View: RIA + Service Application Architecture
 
-![Reference architecture UML diagram for step 6 of ADD process iteration 1](/iteration-artifacts/iteration1_logical.drawio.png)
+![Reference architecture UML diagram for step 6 of ADD process iteration 1](/iterations/iteration-artifacts/iteration1_logical.drawio.png)
 
 ## Logical View: Elements Table
 
@@ -135,7 +135,7 @@ Because we are developing a greenfield system, we will be refining the entire AI
 
 ## Deployment View: Four-Tier Deployment Structure
 
-![Deployment UML diagram for step 6 of ADD process iteration 1](/iteration-artifacts/iteration1_deployment.drawio.png)
+![Deployment UML diagram for step 6 of ADD process iteration 1](/iterations/iteration-artifacts/iteration1_deployment.drawio.png)
 
 ## Deployment View: Elements Table
 
