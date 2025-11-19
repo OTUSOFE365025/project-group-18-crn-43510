@@ -98,17 +98,81 @@ Because we are developing a greenfield system, we will be refining the entire AI
 
 # Step 6: Sketch Views and Record Design Decisions
 
-**Logical View: RIA + Service Application Architecture**
+## Logical View: RIA + Service Application Architecture
 
 ![Reference architecture UML diagram for step 6 of ADD process iteration 1](/iteration-artifacts/iteration1_logical.drawio.png)
 
+## Logical View: Elements Table
 
+| Element / Module | Responsibility |
+|-----------------|----------------|
+| Presentation Layer CS | Render UI components and handle user interactions. |
+| Business Processing Layer CS | Handle client-side logic and input preprocessing. |
+| Data Access Layer CS | Manage requests to server-side APIs and local caching. |
+| Cross Cutting Layer CS | Provide shared client utilities like logging, input validation, and configuration. |
+| Service Layer SS | Expose backend services via APIs and manage requests from clients. |
+| Business Layer SS | Implement core AI logic and business rules. |
+| Data Layer SS | Manage database access and data persistence. |
+| Cross Cutting Layer SS | Provide shared server utilities like logging, security, monitoring, and configuration. |
+| UI Module CS | Individual UI components for the RIA frontend. |
+| UI Processing Module CS | Handle client-side event processing and interaction logic. |
+| Business Logic Module CS | Perform local computations or preprocessing before sending requests to server. |
+| Business Entities Module CS | Represent client-side models and data structures. |
+| Data Access Module CS | Interface with server APIs and manage local data caching. |
+| Service Consumer Module CS | Manage communication with external or internal backend services. |
+| Cache Storage DB CS | Temporarily store frequently used data to improve client performance. |
+| Operational Management Module CS/SS | Monitor system performance, log events, and track errors across client and server. |
+| Security Module CS/SS | Handle authentication, authorization, and data access control on both sides. |
+| Communication Module CS/SS | Manage messaging, API requests, and event transmission between client and server. |
+| Service Interfaces Module SS | Define endpoints and service contracts for clients and other systems. |
+| Message Type Module SS | Standardize request and response formats for communication between modules. |
+| Business Logic Module SS | Implement server-side AI processing, decision-making, and business rules. |
+| Business Entities Module SS | Represent server-side data models and domain objects. |
+| DB Access Module SS | Manage database queries, transactions, and persistence. |
+| External Services/API Access Module SS | Handle integration with university systems and third-party services. |
+| AIDAP DB SS | Store platform data including AI interaction logs, user data, and system configurations. |
+| University Systems DB SS | Access and interact with university-managed databases and services. |
 
-**Deployment View: Four-tier deployment structure**
+## Deployment View: Four-Tier Deployment Structure
 
 ![Deployment UML diagram for step 6 of ADD process iteration 1](/iteration-artifacts/iteration1_deployment.drawio.png)
 
+## Deployment View: Elements Table
 
+| Element / Tier | Responsibility |
+|----------------|----------------|
+| Client Tier: Rich UI Engine | Render user interface, handle user input, perform local validation, and display AI responses. |
+| Web Tier: FastAPI / Service Layer | Receive and validate client requests, manage sessions, and route requests to the Business Logic Tier. |
+| Business Logic Tier: AI & Business Modules | Complete AI processing, implement business rules, control workflows, and integrate with external services.|
+| DB Server: AIDAP DB, University Systems DB, Cache | Store data and logs, provide fast and reliable data access to Business Logic Tier. |
+
+## Deployment View: Relationships Table
+
+| Relationship | Description |
+|--------------|-------------|
+| Client Tier → Web Tier | Client sends user requests (input, queries) to the Web Tier and receives processed responses. |
+| Web Tier → Business Logic Tier | Web Tier requests the Business Logic Tier and receives results to return to the client. |
+| Business Logic Tier → DB Server | Business Logic Tier reads from and writes to database. Also retrieves external information as needed using external services component. |
 
 # Step 7: Perform Analysis of Current Design and Review Iteration Goal and Achievement of Design Purpose
 
+**Progress Table:**
+
+| Not Addressed | Partially Addressed | Completely Addressed | Design Decisions Made During Iteration |
+|---------------|---------------------|-----------------------|----------------------------------------|
+|               | UC-1                |                       | Used RIA architecture + React framework to support multi-platform client. |
+|               | UC-2                |                       | Expected to be implemented in the Service Application architecture’s business layer. |
+|               |                     | UC-6                  | Added External Services component and University Systems DB. |
+|               | QA-1                |                       | Security component uses SSO. |
+|               | QA-2                |                       | RIA reduces server load. |
+|               |                     | QA-3                  | Cache storage is included in the architecture. |
+|           |          QA-4           |                       | Operational Management module improves maintainability and modifiability. |
+|          |        QA-5              |                       | Four-tier deployment supports scalability. |
+|               |                     | CON-1                 | RIA supports required connectivity. |
+| CON-2         |                     |                       | Not addressed. |
+|               |                     | CON-3                 | Security component implements SSO. |
+|               | CON-4               |                       | External Services component defines how to access university systems. |
+| CRN-1         |                     |                       | Not addressed. |
+|               | CRN-2               |                       | Operational Management module provides logs for issue detection. |
+|               | CRN-3               |                       | RIA is cloud-native. |
+|               | CRN-4               |                       | Deployment diagram shows how requests are handled. |
