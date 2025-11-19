@@ -69,6 +69,8 @@ Since this is the first iteration, **we want to establish the overall system str
 - CRN-2: Monitoring system and logging failures
 - CRN-3: Cloud nativity
 
+**Here is the Context Diagram:**
+
 ![Context Diagram for step 2 of ADD process iteration 1](/iteration-artifacts/iteration1_context.drawio.png)
 
 # Step 3: Choose One or More Elements of the System to Decompose
