@@ -23,10 +23,10 @@ Implement Client-Side Preprocessing (Client Side) | Performs tasks like input no
 
 | Design Decisions and Locations | Rationale |
 |-------------------------------|-----------|
-| Create Pipe and Filter Pattern Modules (Server Side) | Implements the pipe-and-filter architecture as modular server-side components. Essentially each module handles a specific stage of data processing (UC-2, QA-4, QA-5, CRN-1). |
-| Use an InputPreprocessor module for Client Preprocessing (Client Side) | Handles the client pre-processing tasks (UC-1, QA-2, QA-3, CRN-1). |
-| Use Adapter Pattern for External Integrations (Server Side) | Provides a uniform interface for integrating with university and external systems, simplifying maintenance and enabling support for multiple external APIs (UC-6, CON-3). |
-| Use Strategy Pattern for Multi-Modal Inputs (Client Side) | Allows dynamic handling of text and voice inputs across platforms, keeping the system flexible and extensible (UC-1). |
+| Create Pipe and Filter Pattern Modules (Server Side) | Implements the pipe-and-filter architecture as modular server-side component. Essentially the new module handles all of the data processing (UC-2, QA-4, QA-5, CRN-1). |
+| Use an Input Preprocessor module for Client Preprocessing (Client Side) | Handles the client pre-processing tasks (UC-1, QA-2, QA-3, CRN-1). |
+| Use Adapter Pattern for External Integrations (Server Side) | Using the External Services module, create an adapter module to make sure to provide a uniform interface for integrating with university and external systems, simplifying maintenance and enabling support for multiple external APIs (UC-6, CON-3). |
+| Use Strategy Pattern for Multi-Modal Inputs (Client Side) | Create a strategy module which focuses on dynamic handling of text and voice inputs across platforms, keeping the system flexible and extensible (UC-1).|
 
 # Step 6: Sketch Views and Record Design Decisions
 
