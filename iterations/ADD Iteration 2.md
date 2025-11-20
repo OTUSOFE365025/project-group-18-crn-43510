@@ -34,7 +34,19 @@ Implement Client-Side Preprocessing (Client Side) | Performs tasks like input no
 
 ![UML Logical Diagram for modules that support the primary functionality](/iterations/iteration-artifacts/iteration2_logical.drawio.png)
 
-table
+## Logical View: Updated Elements & Reponsibilities Table (New Additions)
+
+| Element | Responsibility |
+|--------|----------------|
+| Response Generation SS | Generates final AI/system responses from processed input. |
+| Session Management SS | Tracks user sessions and conversation context. Persists session state to AIDAP DB and provides enriched context to business modules on the server side |
+| Pipe and Filter Processing SS | Implements modular processing pipeline for AI input: stages include input validation, tokenization, intent/entity detection, business rules, and response preparation. Provides processed data to ResponseGeneration. |
+| ExternalAdapter SS | Integrates with external university and third-party systems via adapters. Provides a uniform interface for external API calls and transforms external data for business modules. |
+| Input Preprocessor CS| Handles client-side preprocessing: input normalization, lightweight tokenization, and initial validation. Sends processed input to the Service Layer for further business processing. |
+| Processing Strategy CS | Dynamically selects input processing strategies (text, voice, or multi-modal). |
+| Client Caching CS | Temporarily stores frequently used data locally (in-memory or browser storage). Reduces round-trips to the server by retrieving cached responses. |
+| Client Interface CS | Handles client-side API calls to the Service Layer. Sends requests for AI responses or other server-side services, receives data, and passes it. |
+
 
 ## Primary Use Cases: Sequence Diagrams
 
