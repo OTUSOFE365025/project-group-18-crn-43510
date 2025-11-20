@@ -110,7 +110,6 @@ Because we are developing a greenfield system, we will be refining the entire AI
 | Presentation Layer CS | Render UI components and handle user interactions. |
 | Business Processing Layer CS | Handle client-side logic and input preprocessing. |
 | Data Access Layer CS | Manage requests to server-side APIs and local caching. |
-| Cross Cutting Layer CS | Provide shared client utilities like logging, input validation, and configuration. |
 | Service Layer SS | Expose backend services via APIs and manage requests from clients. |
 | Business Layer SS | Implement core AI logic and business rules. |
 | Data Layer SS | Manage database access and data persistence. |
@@ -122,9 +121,9 @@ Because we are developing a greenfield system, we will be refining the entire AI
 | Data Access Module CS | Interface with server APIs and manage local data caching. |
 | Service Consumer Module CS | Manage communication with external or internal backend services. |
 | Cache Storage DB CS | Temporarily store frequently used data to improve client performance. |
-| Operational Management Module CS/SS | Monitor system performance, log events, and track errors across client and server. |
-| Security Module CS/SS | Handle authentication, authorization, and data access control on both sides. |
-| Communication Module CS/SS | Manage messaging, API requests, and event transmission between client and server. |
+| Operational Management Module SS | Monitor system performance, log events, and track errors across client and server. |
+| Security Module SS | Handle authentication, authorization, and data access control on both sides. |
+| Communication Module SS | Manage messaging, API requests, and event transmission between client and server. |
 | Service Interfaces Module SS | Define endpoints and service contracts for clients and other systems. |
 | Message Type Module SS | Standardize request and response formats for communication between modules. |
 | Business Logic Module SS | Implement server-side AI processing, decision-making, and business rules. |
