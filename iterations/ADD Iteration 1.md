@@ -92,8 +92,9 @@ Because we are developing a greenfield system, we will be refining the entire AI
 |--------------------------------|-----------|
 | Use a local database for storing interactions | The system needs to store user interactions, so a local database on the university network is necessary. University-related data can still be accessed through an external database when needed (UC-6). |
 | Implementing an external services component | Create an External Services component, a dedicated module responsible for interacting with university systems and other third-party services beyond the core AI response functionality (UC-6, CON-3). |
-| Keep operational management component | Use for the monitoring and logging to track system performance and failures, improving maintainability and helping optimize system performance (QA-4, CRN-2). |
-|Add a security component | Checks for authentication and authorization to access system (CON-3) and controls data permissions and accessible features (different types of users can get access to more features).|
+| Keep operational management component from Service Application Architecture | Use for the monitoring and logging to track system performance and failures, improving maintainability and helping optimize system performance (QA-4, CRN-2). |
+|Keep security component from service architecture | Checks for authentication and authorization to access system (CON-3) and controls data permissions and accessible features (different types of users can get access to more features).|
+| Use caching as isolated storage in the RIA architecture | Implement a client-side caching layer (browser storage or in-memory cache) to reduce server round-trips and improve responsiveness. This supports the RIA model by temporarily storing recent interactions and frequently accessed data locally, improving performance (QA-2). |
 
 
 # Step 6: Sketch Views and Record Design Decisions
