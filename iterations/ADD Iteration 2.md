@@ -40,16 +40,27 @@ table
 
 **UC-1 & UC-2 Sequence Diagram: Use multiple conversation modes, Generate responses**
 
-![Sequence Diagram 1 for UC-1, UC-2](/iterations/iteration-artifacts/iteration2_sequence1.drawio.png)
+![Sequence Diagram 1 for UC-1, UC-2](/iterations/iteration-artifacts/useCase1&2.png)
 
 table
 
 **UC-6 Sequence Diagram: Integrate with University Systems**
 
-![Sequence Diagram 2 for UC-6](/iterations/iteration-artifacts/iteration2_sequence2.drawio.png)
+![Sequence Diagram 2 for UC-6](/iterations/iteration-artifacts/useCase6.png)
 
 table
 
 # Step 7: Perform Analysis of Current Design and Review Iteration Goal and Achievement of Design Purpose
 
-table
+| Not Addressed | Partially Addressed | Completely Addressed | Design Decisions Made During Iteration |
+|---------------|----------------------|------------------------|------------------------------------------|
+|               |                      | UC-1                  | Implementation of strategy pattern and client-side processing to enable language detection before server-side processing |
+|               |                      | UC-2                  | AIDAP database ensures consistency between previous interactions and university data; pipe-and-filter pattern ensures modular processing |
+|               |                      | UC-6                  | Adapter pattern used to connect to external university systems, extendable to other APIs |
+|               | QA-2                 |                       | Client-side processing is used to improve perceived response times |
+|               |                      | QA-3                  | Client-side caching stores conversation history |
+|               | QA-4                 |                       | Continuous deployment pipeline implemented through pipe-and-filter pattern |
+|               |                      | QA-5                  | Pipe-and-filter separated into stages for future scalability |
+|               |                      | CON-2                 | Client-side caching + non-volatile AIDAP database preserve system state |
+|               | CON-3                |                       | Adapter pattern connects to external university systems for credential verification |
+|               |                      | CRN-1                 | Client-side preprocessing + pipe-and-filter ensure correct interpretation and context |
